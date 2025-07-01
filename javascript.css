@@ -1,0 +1,49 @@
+/*Base styles*/
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px 20px;
+  background: #ffffff;
+  color: #000000;
+  transition: background 0.4s, color 0.4s;
+}
+
+/* Dark‑mode override*/
+body.dark {
+  background: #121212;
+  color: #ffffff;
+}
+/*Buttons  */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: transparent;
+  transition: background 0.3s;
+}
+
+/* Optional hover flair */
+button:hover {
+  background: rgba(0,0,0,0.05);
+}
+
+body.dark button:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* Clock text  */
+#clock {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+/* Dark‑mode toggle button position  */
+#toggleModeBtn {
+  position: fixed;   
+  top: 12px;         
+  right: 12px;       
+  z-index: 1000;  
+}
